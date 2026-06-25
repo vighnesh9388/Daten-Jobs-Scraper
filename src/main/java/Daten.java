@@ -21,8 +21,8 @@ public class Daten {
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         driver.get("https://daten.com/");
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        Thread.sleep(2000);
 
         driver.findElement(By.linkText("Careers")).click();
 
