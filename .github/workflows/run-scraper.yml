@@ -31,16 +31,26 @@ jobs:
       run: |
         mvn compile -Dwebdriver.http.factory=jdk-http-client exec:java -Dexec.mainClass="Daten"
 
-    - name: Append Report to README
+    - name: Update README with latest report
       run: |
-        echo "" >> README.md
-        echo "---" >> README.md
-        echo "" >> README.md
-        echo "## Latest Scrape ($(date -u '+%Y-%m-%d %H:%M UTC'))" >> README.md
-        echo "" >> README.md
-        echo '```text' >> README.md
-        cat jobs_report.txt >> README.md
-        echo '```' >> README.md
+        awk '
+          BEGIN {skip=0}
+          /<!-- REPORT_START -->/ {
+            print
+            print ""
+            print "```text"
+            system("cat jobs_report.txt")
+            print "```"
+            skip=1
+            next
+          }
+          /<!-- REPORT_END -->/ {
+            skip=0
+          }
+          !skip {print}
+        ' README.md > README.tmp
+    
+        mv README.tmp README.md
         
     - name: Commit and Push the Job Report File
       run: |
