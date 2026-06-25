@@ -90,7 +90,12 @@ public class Daten {
 
         try (java.io.PrintWriter writer = new java.io.PrintWriter("jobs_report.txt")) {
 
-            writer.println("Report generated on (UTC): " + java.time.ZonedDateTime.now(java.time.ZoneOffset.UTC));
+            java.time.ZonedDateTime now = java.time.ZonedDateTime.now(java.time.ZoneOffset.UTC);
+
+            java.time.format.DateTimeFormatter formatter =
+                    java.time.format.DateTimeFormatter.ofPattern("dd MMM yyyy, hh:mm a 'UTC'");
+            
+            writer.println("Report generated on: " + now.format(formatter));
             writer.println();
             writer.println("Total Job Listings Found for Daten Technology Solutions : " + jobs.size());
 
