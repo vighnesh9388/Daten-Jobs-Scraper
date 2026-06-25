@@ -26,7 +26,7 @@ View the latest live metrics here: `jobs_report.txt`
 <!-- REPORT_START -->
 
 ```text
-Report generated on (UTC): 2026-06-25T11:23:06.237568930Z
+Report generated on: 25 Jun 2026, 11:29 AM UTC
 
 Total Job Listings Found for Daten Technology Solutions : 65
 
