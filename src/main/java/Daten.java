@@ -89,7 +89,9 @@ public class Daten {
         }
 
         try (java.io.PrintWriter writer = new java.io.PrintWriter("jobs_report.txt")) {
-            
+
+            writer.println("Report generated on (UTC): " + java.time.ZonedDateTime.now(java.time.ZoneOffset.UTC));
+            writer.println();
             writer.println("Total Job Listings Found for Daten Technology Solutions : " + jobs.size());
 
             writer.println("\n================ INDIA JOBS : " + indiaJobsOutput.size() + " ================\n");
