@@ -30,15 +30,7 @@ jobs:
     - name: Run Selenium Scraper
       run: |
         mvn compile -Dwebdriver.http.factory=jdk-http-client exec:java -Dexec.mainClass="Daten"
-        
-    - name: Commit and Push the Job Report File
-      run: |
-        git config --global user.name 'GitHub Actions Bot'
-        git config --global user.email 'actions@github.com'
-        git add jobs_report.txt
-        git commit -m "Automated Data Update: Refresh active job listings" || echo "No changes to commit"
-        git push
-        
+
     - name: Append Report to README
       run: |
         echo "" >> README.md
@@ -49,3 +41,13 @@ jobs:
         echo '```text' >> README.md
         cat jobs_report.txt >> README.md
         echo '```' >> README.md
+        
+    - name: Commit and Push the Job Report File
+      run: |
+        git config --global user.name 'GitHub Actions Bot'
+        git config --global user.email 'actions@github.com'
+        git add jobs_report.txt README.md
+        git commit -m "Automated Data Update: Refresh active job listings" || echo "No changes to commit"
+        git push
+        
+
