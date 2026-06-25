@@ -88,18 +88,26 @@ public class Daten {
             }
         }
 
-        System.out.println("\n================ INDIA JOBS : " + indiaJobsOutput.size() + " ================\n");
-        System.out.printf("%-70s %-15s %-15s %-15s%n", "TITLE", "OPENINGS", "MODE", "EXPERIENCE");
-        for (String line : indiaJobsOutput) System.out.println(line);
+        try (java.io.PrintWriter writer = new java.io.PrintWriter("jobs_report.txt")) {
+            
+            writer.println("Total Job Listings Found for Daten Technology Solutions : " + jobs.size());
 
-        System.out.println("\n================ USA JOBS : " + usaJobsOutput.size() + " ================\n");
-        System.out.printf("%-70s %-15s %-15s %-15s%n", "TITLE", "OPENINGS", "MODE", "EXPERIENCE");
-        for (String line : usaJobsOutput) System.out.println(line);
+            writer.println("\n================ INDIA JOBS : " + indiaJobsOutput.size() + " ================\n");
+            writer.printf("%-70s %-15s %-15s %-15s%n", "TITLE", "OPENINGS", "MODE", "EXPERIENCE");
+            for (String line : indiaJobsOutput) writer.println(line);
 
-        System.out.println("\n================ NOT SPECIFIED JOBS : " + unspecifiedJobsOutput.size() + " ================\n");
-        System.out.printf("%-70s %-15s %-15s %-15s%n", "TITLE", "OPENINGS", "MODE", "EXPERIENCE");
-        for (String line : unspecifiedJobsOutput) System.out.println(line);
+            writer.println("\n================ USA JOBS : " + usaJobsOutput.size() + " ================\n");
+            writer.printf("%-70s %-15s %-15s %-15s%n", "TITLE", "OPENINGS", "MODE", "EXPERIENCE");
+            for (String line : usaJobsOutput) writer.println(line);
 
+            writer.println("\n================ NOT SPECIFIED JOBS : " + unspecifiedJobsOutput.size() + " ================\n");
+            writer.printf("%-70s %-15s %-15s %-15s%n", "TITLE", "OPENINGS", "MODE", "EXPERIENCE");
+            for (String line : unspecifiedJobsOutput) writer.println(line);
+            
+            System.out.println("Successfully generated jobs_report.txt!");
+        } catch (java.io.IOException e) {
+            System.out.println("An error occurred while writing the file.");
+        }
         driver.quit();
     }
 }
