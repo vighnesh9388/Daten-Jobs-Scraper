@@ -24,4 +24,4 @@ jobs:
 
     - name: Run Selenium Scraper
       run: |
-        mvn compile exec:java -Dexec.mainClass="Daten"
+        mvn compile -Dwebdriver.http.factory=jdk-http-client exec:java -Dexec.mainClass="Daten"
