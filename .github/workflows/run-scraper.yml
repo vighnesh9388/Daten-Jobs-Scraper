@@ -38,3 +38,14 @@ jobs:
         git add jobs_report.txt
         git commit -m "Automated Data Update: Refresh active job listings" || echo "No changes to commit"
         git push
+        
+    - name: Append Report to README
+      run: |
+        echo "" >> README.md
+        echo "---" >> README.md
+        echo "" >> README.md
+        echo "## Latest Scrape ($(date -u '+%Y-%m-%d %H:%M UTC'))" >> README.md
+        echo "" >> README.md
+        echo '```text' >> README.md
+        cat jobs_report.txt >> README.md
+        echo '```' >> README.md
