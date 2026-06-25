@@ -1,0 +1,27 @@
+name: Run Career Scraper
+
+on:
+  # Allows you to click a button on the web to run it whenever you want
+  workflow_dispatch:
+  # Optional: Runs automatically every Monday at 9:00 AM UTC
+  schedule:
+    - cron: '0 9 * * 1'
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Java 21
+      uses: actions/setup-java@v4
+      with:
+        java-version: '21'
+        distribution: 'temurin'
+        cache: 'maven'
+
+    - name: Run Selenium Scraper
+      run: |
+        mvn compile exec:java -Dexec.mainClass="Daten"
