@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
   # Optional: Runs automatically every Monday at 9:00 AM UTC
   schedule:
-    - cron: '0 9 * * 1'
+    - cron: "*/5 * * * *"
 
 jobs:
   scrape:
