@@ -26,16 +26,17 @@ View the latest live metrics here: `jobs_report.txt`
 <!-- REPORT_START -->
 
 ```text
-Report generated on: 13 Nov 2026, 05:51 AM UTC
+Report generated on: 16 Nov 2026, 05:39 AM UTC
 
-Total Job Listings Found for Daten Technology Solutions : 65
+Total Job Listings Found for Daten Technology Solutions : 66
 
-================ INDIA JOBS : 51 ================
+================ INDIA JOBS : 52 ================
 
 TITLE                                                                  OPENINGS        MODE            EXPERIENCE     
 Production Support Engineer – Amdocs Optima                            1               On site         4-10 Years     
 Full Stack AI Engineer                                                 1               On site         5-10 Years     
 PMO Executive – Delivery                                               1               On site         1-3 Years      
+IT Operations Engineer                                                 1               On site         3-7 Years      
 IT Operations Engineer                                                 1               On site         3-7 Years      
 IT Operations Lead                                                     1               On site         8-15 Years     
 HR Learning & Development Operations                                   1               On site         5-10 Years     
