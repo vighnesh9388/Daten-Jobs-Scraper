@@ -26,17 +26,24 @@ View the latest live metrics here: `jobs_report.txt`
 <!-- REPORT_START -->
 
 ```text
-Report generated on: 16 Nov 2026, 05:39 AM UTC
+Report generated on: 18 Nov 2026, 06:40 AM UTC
 
-Total Job Listings Found for Daten Technology Solutions : 66
+Total Job Listings Found for Daten Technology Solutions : 75
 
-================ INDIA JOBS : 52 ================
+================ INDIA JOBS : 59 ================
 
 TITLE                                                                  OPENINGS        MODE            EXPERIENCE     
+Senior Software Engineer – JAVA + AI                                   15              Hybrid          8-12 Years     
+Software Engineer ll- JAVA + AI                                        15              Hybrid          3-5 Years      
+Technical Product Owner – Order Orchestration (AI-Accelerated)         5               Hybrid          5-10 Years     
+Staff Engineer-Python+AI                                               25              Hybrid          10-15 Years    
+ServiceNow Developer                                                   25              Hybrid          3-7 Years      
+Senior Service Now Developer                                           25              Hybrid          5-10 Years     
+Technical Lead-ServiceNow                                              25              Hybrid          10-15 Years    
+Senior Oracle Database Administrator                                   15              Hybrid          10-15 Years    
 Production Support Engineer – Amdocs Optima                            1               On site         4-10 Years     
 Full Stack AI Engineer                                                 1               On site         5-10 Years     
 PMO Executive – Delivery                                               1               On site         1-3 Years      
-IT Operations Engineer                                                 1               On site         3-7 Years      
 IT Operations Engineer                                                 1               On site         3-7 Years      
 IT Operations Lead                                                     1               On site         8-15 Years     
 HR Learning & Development Operations                                   1               On site         5-10 Years     
@@ -102,9 +109,11 @@ OKTA Developer                                                         1        
 Engagement Manager                                                     1               On site         8-20 Years     
 Junior Network Engineer                                                1               On site         2-4 Years      
 
-================ NOT SPECIFIED JOBS : 2 ================
+================ NOT SPECIFIED JOBS : 4 ================
 
 TITLE                                                                  OPENINGS        MODE            EXPERIENCE     
+Senior Software Engineer – JAVA + AI                                   15              On site         8-12 Years     
+Software Engineer ll- JAVA + AI                                        15              On site         3-5 Years      
 Frontend Developer                                                     NOT SPECIFIED   NO MODE DATA    NO EXPERIENCE DATA
 Frontend Developer                                                     NOT SPECIFIED   NO MODE DATA    NO EXPERIENCE DATA
 ```
