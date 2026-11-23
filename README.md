@@ -26,9 +26,9 @@ View the latest live metrics here: `jobs_report.txt`
 <!-- REPORT_START -->
 
 ```text
-Report generated on: 20 Nov 2026, 06:29 AM UTC
+Report generated on: 23 Nov 2026, 06:40 AM UTC
 
-Total Job Listings Found for Daten Technology Solutions : 75
+Total Job Listings Found for Daten Technology Solutions : 76
 
 ================ INDIA JOBS : 59 ================
 
@@ -109,9 +109,10 @@ OKTA Developer                                                         1        
 Engagement Manager                                                     1               On site         8-20 Years     
 Junior Network Engineer                                                1               On site         2-4 Years      
 
-================ NOT SPECIFIED JOBS : 4 ================
+================ NOT SPECIFIED JOBS : 5 ================
 
 TITLE                                                                  OPENINGS        MODE            EXPERIENCE     
+Adobe Commerce (Magento) and AEM Lead Engineer                         15              On site         4-10 Years     
 Senior Software Engineer – JAVA + AI                                   15              On site         8-12 Years     
 Software Engineer ll- JAVA + AI                                        15              On site         3-5 Years      
 Frontend Developer                                                     NOT SPECIFIED   NO MODE DATA    NO EXPERIENCE DATA
